@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    background-color: rgba(151, 151, 151, 0.356);
+    padding-left: 30px;
+}
+
+header button {
+    box-sizing: content-box;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header button:hover {
+    transform: translate( 2px, 1px );
+    font-size: 19px;
+}
+
+header button:active {
+    transform: translate( 1px, 1px );
+    transition: transform 0s ease-in-out;
+    opacity: 0.8;
+}
+
+
+picture {
+    display: flex;
+    flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+    position: fixed; top: 50px; left: 50%; transform: translate(-50%, 0) ;
+    font: normal bold 18px 'lato';
+    height: calc(100vh - 200px); width: 400px;
+    opacity: 0.45;
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+}
+
+ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    padding: 10px;
+    border: 2px solid #5CBF4D;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.06);
+}
+
+li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+li p {
+     line-height: 3ex;
+}
+
+.price {
+    font-weight: bold;
+    color: #598053;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.452);
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 30px;
+}
+
+
+
+@media (max-width: 400px) {
+    picture {
+        width: 90vw;
+    }
+    header {
+        justify-content: center;
+        gap: 30px;
+    }
+    header button {
+        font-size: 16px;
+    }
+}
