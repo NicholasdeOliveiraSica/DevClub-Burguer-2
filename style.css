@@ -111,8 +111,24 @@ div {
     header {
         justify-content: center;
         gap: 30px;
+        padding: 0;
+        border-radius: 0 0 5px 5px;
     }
     header button {
         font-size: 16px;
+        padding: 0;
+    }
+
+    ul {
+        grid-template-columns: 40vw 40vw;
+    }
+
+    header button:hover {
+        transform: translate( 0px, 0px );
+        font-size: 16px;
+    }
+
+    header button:active {
+        transform: translate( 0px, 0px );
     }
 }
